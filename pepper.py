@@ -33,6 +33,7 @@ def on_message(client, userdata, msg):
 	elif msg.topic == "pepper/goodbye":
 		tts.say("Goodbye " + str(msg.payload))
 	elif msg.topic == "pepper/moveon":
+		# lihat  http://doc.aldebaran.com/2-1/naoqi/motion/alnavigation.html
 		#nav.navigateTo(1.0, 0.0)
 		tts.say("Navigating..")
 	
